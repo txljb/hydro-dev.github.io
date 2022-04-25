@@ -18,6 +18,7 @@
 通常的，在您访问的 url 前加上 `view-source:`（如 `view-source:https://hydro.ac` 即可查看页面源代码，在第二行的 `<html data-page="xxx">` 中 `data-page` 值即为页面名（首页例外，为 `main.html`）。
 在 [默认 templates](https://github.com/hydro-dev/Hydro/tree/master/packages/ui-default/templates) 中找到对应文件，将**文件的全部内容** 复制到 `~/addon/templates/` 文件夹下后进行修改即可。
 
-特别的，创建题目时的默认模板位于 `partials/problem_default.md`，创建训练计划时的默认模板位于 `partials/training_default.json`，修改方式同上。
+特别的，创建题目时的默认模板位于 `partials/problem_default.md`，安装脚本部署，可在 `~/addon/templates/` 文件夹下新建partials/problem_default.md。
+创建训练计划时的默认模板位于 `partials/training_default.json`，修改方式同上。
 
-以上所有更改均会在重启 Hydro 后生效。
+以上所有更改均会在重启 Hydro （m2 restart hydrooj）后生效。
